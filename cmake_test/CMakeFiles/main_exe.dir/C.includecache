@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cho/Documents/cpp_test/cmake_test/calendar.c
+diary.h
+/home/cho/Documents/cpp_test/cmake_test/diary.h
+
+/home/cho/Documents/cpp_test/cmake_test/diary.h
+stdio.h
+-
+
+/home/cho/Documents/cpp_test/cmake_test/memo.c
+diary.h
+/home/cho/Documents/cpp_test/cmake_test/diary.h
+
