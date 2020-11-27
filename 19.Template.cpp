@@ -28,17 +28,20 @@ class Box{
 // 클래스 템플릿의 활용
 #include <vector>
 #include <string>
-
+/*    변수 타입    |   클래스 선언    */
 template <class C> class Stack{     // C 타입의 클래스 Stack을 생성
-    private : vector<C> elements;   // private 항에 C타입의 vector 변수 elements 를 생성
-    public : void push(C const);    // public 에 출력 void push 함수와
-             C top();               // 출력이 C 타입인 함수 top() 을 생성
+    private : 
+        vector<C> elements;   // private 항에 C타입의 vector 변수 elements 를 생성
+    public : 
+        void push(C const);    // public 에 출력 void push 함수와
+        C top();               // 출력이 C 타입인 함수 top() 을 생성
 };
 
+/*    변수 타입    |  출력타입 클래스::함수 정의(클래스와 같은 타입의 arg)    */
 template <class C> void Stack<C>::push(C const element){ // 위에서 선언한 push 함수 내용 
     elements.push_back(element);//vector 변수의 마지막부분에 element를 추가함.
 }
-
+/*    변수 타입    |   함수 정의    */
 template <class C> C Stack<C>::top(){ //위에서 선언한 top 함수 선언
     return elements.back();// 마지막에 추가한 element를 출력
 }
