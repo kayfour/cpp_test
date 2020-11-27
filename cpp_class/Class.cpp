@@ -1,20 +1,12 @@
-#include <iostream>
-#include <string>
+#include "Class.h"
 using namespace std;
 
-class test{
-    // 공통으로 외부에서 접근이 가능
-    public:
-        void setWidth(double param_width){
-            width = param_width;
-        }
-
-    // 현재 이 클래스 내에서만 접근이 가능
-    private:
-        double width;
-
-    // 접근이 불가 
-    protected:
-        double breadth;
-
-};
+int main()
+{
+    Test test1(32.53);
+    test1.setWidth(32);
+    double wid = test1.setWidth();
+    cout<<"variable wid == "<<wid<<endl;
+    test1.~Test();
+    return 0;
+}
