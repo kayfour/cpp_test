@@ -12,6 +12,7 @@ class Box{
             std::cout<<this->length<<" "<<this->breath<<" "<<this->height<<std::endl;
             return length*breath*height;
         }
+
     private:
         double length,breath,height;
 };
@@ -32,7 +33,6 @@ class Box{
 int main(int argc, char ** argv)
 {
     Box *ptrBox = new Box[2]{{2.5,3.7},{2.7,3.6,4.7}};
-
     std::cout<<ptrBox->getVolume()<<std::endl;
     std::cout<<(ptrBox+1)->getVolume()<<std::endl;
     delete ptrBox;
